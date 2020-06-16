@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Find me Wine!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <h1>Pick a Color!</h1>
+    <h3>What are you looking for?  Region?  Flavor?  Grape?  Producer?  Vineyard?</h3>
+    <p><em>Type in some descriptors and find wines that are similar</em></p>
+    <form action="/red">
+        <p> 
+            <label for="RedWine">Red Wine</label>
+            <br>
+            <input type="string" name="user_input_red">
+        </p>
+        <p>
+            <button type="submit">Red Please!</button>
+        </p>
+    </form>
+
+    <form action="/white">
+        <p> 
+            <label for="WhiteWine">White Wine</label>
+            <br>
+            <input type="string" name="user_input_white">
+        </p>
+        <p>
+            <button type="submit">I'll take a White</button>
+        </p>
+    </form>
+
+    <form action="/rose">
+        <p> 
+            <label for="RoseWine">Rose</label>
+            <br>
+            <input type="string" name="user_input_rose">
+        </p>
+        <p>
+            <button type="submit">Pink Please!</button>
+        </p>
+    </form>
+    
+    <form action="/sparkling">
+        <p> 
+            <label for="SparklingWine">Sparkling</label>
+            <br>
+            <input type="string" name="user_input_sparkling">
+            </p>
+        <p>
+            <button type="submit">Bubbles!</button>
+        </p>
+    </form>
+
+    <form action="/other">
+        <p> 
+            <label for="OtherWine">Other Wine</label>
+            <br>
+            <input type="string" name="user_input_other">
+        </p>
+        <p>
+            <button type="submit">Liquid Dessert...</button>
+        </p>
+    </form>
+    
+
+</body>
+</html>
