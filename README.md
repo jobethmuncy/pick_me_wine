@@ -13,7 +13,7 @@ The world of wine can be confusing to navigate. Every country different rules an
 <h4>Capstone</h4>
     <ul><strong>app</strong>
         <li>templates</li>
-            -results.html
+            -results.html<br>
             -search_form.html
         <li>testing_py_functions</li>
         <li>model.all</li>
