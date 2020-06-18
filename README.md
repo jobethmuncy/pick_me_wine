@@ -64,7 +64,7 @@ The world of wine can be confusing to navigate. Every country different rules an
         <li>twenty.png</li>
         <li>wine.png</li>
     </ul>
-    capstone_presentation.pdf<br>
+    Pick me a Wine.pdf<br>
     README.md
     
 <h3>Executive Statement</h3>
