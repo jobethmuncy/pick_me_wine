@@ -31,14 +31,17 @@ def red():
     wines = red_matches(response)
     best_fit = what_are_words(response)
     return render_template('results.html', what_listed = response, 
-                            best_fit0=best_fit[0][0], best_fit1=best_fit[0][1], best_fit2=best_fit[0][2],
+                            best_fit0=best_fit[0][0][0], best_fit1=best_fit[0][1][0], best_fit2=best_fit[0][2][0],
                             wine0=wines[0], wine1=wines[1], wine2=wines[2], wine3=wines[3], wine4=wines[4], 
                             url0=names[wines[0]][0], url1=names[wines[1]][0], url2=names[wines[2]][0], 
                             url3=names[wines[3]][0], url4=names[wines[4]][0],
                             price0=names[wines[0]][1], price1=names[wines[1]][1], price2=names[wines[2]][1],
                             price3=names[wines[3]][1], price4=names[wines[4]][1], 
                             country0=names[wines[0]][2], country1=names[wines[1]][2], country2=names[wines[2]][2],
-                            country3=names[wines[3]][2], country4=names[wines[4]][2] ) 
+                            country3=names[wines[3]][2], country4=names[wines[4]][2],
+                            description0=names[wines[0]][3][:300], description1=names[wines[1]][3][:300],
+                            description2=names[wines[2]][3][:300], description3=names[wines[3]][3][:300], 
+                            description4=names[wines[4]][3][:300]  ) 
     
 @app.route('/white')
 def white():
@@ -47,7 +50,7 @@ def white():
     wines = white_matches(response)
     best_fit = what_are_words_white(response)
     return render_template('results.html', what_listed = response, 
-                            best_fit0=best_fit[0][0], best_fit1=best_fit[0][1], best_fit2=best_fit[0][2], 
+                            best_fit0=best_fit[0][0][0], best_fit1=best_fit[0][1][0], best_fit2=best_fit[0][2][0], 
                             wine0=wines[0], wine1=wines[1], wine2=wines[2], wine3=wines[3], wine4=wines[4], 
                             url0=names[wines[0]][0], url1=names[wines[1]][0], url2=names[wines[2]][0], 
                             url3=names[wines[3]][0], url4=names[wines[4]][0],
@@ -63,7 +66,7 @@ def rose():
     wines = rose_matches(response)
     best_fit = what_are_words_rose(response)
     return render_template('results.html', what_listed = response, 
-                            best_fit0=best_fit[0][0], best_fit1=best_fit[0][1], best_fit2=best_fit[0][2],
+                            best_fit0=best_fit[0][0][0], best_fit1=best_fit[0][1][0], best_fit2=best_fit[0][2][0],
                             wine0=wines[0], wine1=wines[1], wine2=wines[2], wine3=wines[3], wine4=wines[4], 
                             url0=names[wines[0]][0], url1=names[wines[1]][0], url2=names[wines[2]][0], 
                             url3=names[wines[3]][0], url4=names[wines[4]][0],
@@ -79,7 +82,7 @@ def sparkling():
     wines = sparkling_matches(response)
     best_fit = what_are_words_sparkling(response)
     return render_template('results.html', what_listed = response, 
-                            best_fit0=best_fit[0][0], best_fit1=best_fit[0][1], best_fit2=best_fit[0][2], 
+                            best_fit0=best_fit[0][0][0], best_fit1=best_fit[0][1][0], best_fit2=best_fit[0][2][0], 
                             wine0=wines[0], wine1=wines[1], wine2=wines[2], wine3=wines[3], wine4=wines[4], 
                             url0=names[wines[0]][0], url1=names[wines[1]][0], url2=names[wines[2]][0], 
                             url3=names[wines[3]][0], url4=names[wines[4]][0],
@@ -95,7 +98,7 @@ def other():
     wines = other_matches(response)
     best_fit = what_are_words_other(response)
     return render_template('results.html', what_listed = response, 
-                            best_fit0=best_fit[0][0], best_fit1=best_fit[0][1], best_fit2=best_fit[0][2], 
+                            best_fit0=best_fit[0][0][0], best_fit1=best_fit[0][1][0], best_fit2=best_fit[0][2][0], 
                             wine0=wines[0], wine1=wines[1], wine2=wines[2], wine3=wines[3], wine4=wines[4], 
                             url0=names[wines[0]][0], url1=names[wines[1]][0], url2=names[wines[2]][0], 
                             url3=names[wines[3]][0], url4=names[wines[4]][0],
