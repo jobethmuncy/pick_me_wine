@@ -57,7 +57,10 @@ def white():
                             price0=names[wines[0]][1], price1=names[wines[1]][1], price2=names[wines[2]][1],
                             price3=names[wines[3]][1], price4=names[wines[4]][1], 
                             country0=names[wines[0]][2], country1=names[wines[1]][2], country2=names[wines[2]][2],
-                            country3=names[wines[3]][2], country4=names[wines[4]][2] ) 
+                            country3=names[wines[3]][2], country4=names[wines[4]][2],
+                            description0=names[wines[0]][3][:300], description1=names[wines[1]][3][:300],
+                            description2=names[wines[2]][3][:300], description3=names[wines[3]][3][:300], 
+                            description4=names[wines[4]][3][:300]  ) 
 
 @app.route('/rose')
 def rose():
@@ -73,7 +76,10 @@ def rose():
                             price0=names[wines[0]][1], price1=names[wines[1]][1], price2=names[wines[2]][1],
                             price3=names[wines[3]][1], price4=names[wines[4]][1], 
                             country0=names[wines[0]][2], country1=names[wines[1]][2], country2=names[wines[2]][2],
-                            country3=names[wines[3]][2], country4=names[wines[4]][2] ) 
+                            country3=names[wines[3]][2], country4=names[wines[4]][2],
+                            description0=names[wines[0]][3][:300], description1=names[wines[1]][3][:300],
+                            description2=names[wines[2]][3][:300], description3=names[wines[3]][3][:300], 
+                            description4=names[wines[4]][3][:300]  ) 
 
 @app.route('/sparkling')
 def sparkling():
@@ -89,7 +95,10 @@ def sparkling():
                             price0=names[wines[0]][1], price1=names[wines[1]][1], price2=names[wines[2]][1],
                             price3=names[wines[3]][1], price4=names[wines[4]][1], 
                             country0=names[wines[0]][2], country1=names[wines[1]][2], country2=names[wines[2]][2],
-                            country3=names[wines[3]][2], country4=names[wines[4]][2] ) 
+                            country3=names[wines[3]][2], country4=names[wines[4]][2],
+                            description0=names[wines[0]][3][:300], description1=names[wines[1]][3][:300],
+                            description2=names[wines[2]][3][:300], description3=names[wines[3]][3][:300], 
+                            description4=names[wines[4]][3][:300]  ) 
 
 @app.route('/other')
 def other():
@@ -105,7 +114,10 @@ def other():
                             price0=names[wines[0]][1], price1=names[wines[1]][1], price2=names[wines[2]][1],
                             price3=names[wines[3]][1], price4=names[wines[4]][1], 
                             country0=names[wines[0]][2], country1=names[wines[1]][2], country2=names[wines[2]][2],
-                            country3=names[wines[3]][2], country4=names[wines[4]][2] ) 
+                            country3=names[wines[3]][2], country4=names[wines[4]][2], 
+                            description0=names[wines[0]][3][:300], description1=names[wines[1]][3][:300],
+                            description2=names[wines[2]][3][:300], description3=names[wines[3]][3][:300], 
+                            description4=names[wines[4]][3][:300]  ) 
 
 
 
