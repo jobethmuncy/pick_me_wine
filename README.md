@@ -1,4 +1,4 @@
-<h1>Project 5 - Capstone</h1>
+<h1>Project 5 - Pick Me a Wine!</h1>
 <h3>Problem Statement</h3>
 The world of wine can be confusing to navigate. Every country different rules and regulations for labeling and selling wines. A wine label itself can be difficult to read. If someone knows one or two words about a flavor profile, producer, grape, vineyard site, region, appellation how do they find that wine or other similar ones? I am creating a wine recommender that will take text and recommend wines that are available to purchase with a link to the site so they can buy and explore.<br>
 <h3>Data Collecting</h3>
@@ -10,7 +10,7 @@ The world of wine can be confusing to navigate. Every country different rules an
 </ul>
 
 
-<h4>Capstone</h4>
+<h4>Pick Me a Wine!</h4>
     <ul><strong>app</strong>
         <li>templates</li>
             -results.html<br>
